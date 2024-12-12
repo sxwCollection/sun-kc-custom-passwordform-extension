@@ -11,10 +11,9 @@
 1. see in methode suny.keycloak.mypassowrdform.MyUsernamePasswordForm#validatePassword
 
 # how to deploy custom extensions
-what is a required action?  
 1. mvn clean package
 2. download keycloak zip file, https://www.keycloak.org/downloads, and unzip it
 3. copy the package under target/xxxYourCustomExtension.jar to yourKeycloakHome/providers 
-4. run keycloakHome/bin/kc.xx build
+4. run keycloakHome/bin/kc.sh/bat build
 5. run kc.bat start-dev --http-port 8088 --proxy edge --hostname-strict=false --spi-theme-static-max-age=-1 --spi-theme-cache-themes=false --spi-theme-cache-templates=false --log="console,file"
 6. http://localhost:8088, initial username: admin, password: admin
